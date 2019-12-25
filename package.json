@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/SergSmith64/simple-piskel-clone/issues"
   },
-  "homepage": "https://github.com/SergSmith64/simple-piskel-clone#readme"
+  "homepage": "https://github.com/SergSmith64/simple-piskel-clone#readme",
+  "devDependencies": {
+    "webpack": "^4.41.4"
+  }
 }
