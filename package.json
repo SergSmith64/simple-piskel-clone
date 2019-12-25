@@ -1,0 +1,26 @@
+{
+  "name": "simple-piskel-clone",
+  "version": "1.0.0",
+  "description": "RSSchool Education Task 2019-2020",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergSmith64/simple-piskel-clone.git"
+  },
+  "keywords": [
+    "Piskel",
+    "clone",
+    "Canvas",
+    "Draw",
+    "Animation"
+  ],
+  "author": "Sergei Kuznetcov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergSmith64/simple-piskel-clone/issues"
+  },
+  "homepage": "https://github.com/SergSmith64/simple-piskel-clone#readme"
+}
