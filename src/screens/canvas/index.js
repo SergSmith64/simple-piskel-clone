@@ -1,0 +1,1 @@
+console.log("__это_INDEX.JS__");

@@ -1,14 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
+a {
+  color: aquamarine;
 }
-
-body {
-  min-width: 320px;
-  font-size: 14px;
-}
-
-h1 {
-  font-size: 24px;
-}
-/*# sourceMappingURL=index.css.map */
