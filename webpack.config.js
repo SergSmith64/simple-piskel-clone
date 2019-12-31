@@ -11,12 +11,37 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.html$/,
+        use: [
+        {
+          loader: 'html-loader',
+          options: {
+            minimize: false
+          }
+        }
+      ]
+      },
+      {
         test: /\.css$/,
         use: [
+          'style-loader',
+          MiniCssExtractPlugin.loader,
           {
-            loader: MiniCssExtractPlugin.loader,
+            loader: 'css-loader',
           },
-            "css-loader"
+        ]
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true
+            }
+          },
         ]
       },
     ],
@@ -26,7 +51,7 @@ module.exports = {
         template: './src/screens/canvas/index.html'
     }),
     new MiniCssExtractPlugin({
-        filename: '[name].css'
+        filename: 'index.css'
     }),
   ],
 };
