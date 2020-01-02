@@ -1,5 +1,7 @@
 console.log("Empty_File_APP.JS__");
 
+// import '../screens/canvas/images/favicon.ico';
+
 // import * from '../screens/canvas/index';
 import { testSum } from './screens/canvas/index';
 const summa = require('./screens/canvas/index.js');
