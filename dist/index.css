@@ -29,7 +29,7 @@ header {
   background-color: #6d0922;
 }
 .header-tool button {
-  margin-left: 30px;
+  padding-left: 30px;
 }
 .container {
   width: 900px;
@@ -50,3 +50,4 @@ h1 {
 h2 {
   font-size: 24px;
 }
+
