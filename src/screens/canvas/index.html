@@ -7,13 +7,14 @@
 		<title>Simple Piskel Clone</title>
 		<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 		<!-- ____убрать_____ -->
-		<link href="index.css" rel="stylesheet"></head>
+		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+		<!-- <link href="index.css" rel="stylesheet"> -->
 	</head>
 	<body>
 		<div class="container">
 			<header>
 				<div class="header-logo">
-					<img src="" alt="">PISKEL
+					<img src="" alt="">PISKEL<br> Logo
 				</div>
 				<div class="header-name">
 					<h1>Simple Piskel Clone</h1>
@@ -24,15 +25,33 @@
 				</div>
 			</header>
 			<main>
-				<div class="row">
-					<div class="col-md-1">111</div>
-					<div class="col-md-1">111</div>
-					<div class="col-md-7">
-						<canvas id="canvas">Обновите браузер</canvas>
+					<div class="main-tools"></div>
+
+					<div class="main-frames">
+
+						<div class="main-frames__new">
+							<div class="main-frame-number">1</div>
+						</div>
+
+						<div class="main-frames__new selected">
+							<div class="main-frame-number">2</div>
+							<!-- <button rel="tooltip" data-placement="right" data-tile-number="0" data-tile-action="clone" class="tile-overlay duplicate-frame-action icon-frame-duplicate-white" data-original-title="Duplicate this frame"></button> -->
+						</div>
+
+						<!-- ____ КНОПКА ДОБАВИТЬ ____ -->
+						<div class="main-frames__add-frame-action">
+							<div class="add-frame-action-icon icon-frame-plus-white"></div>
+							<div class="label">Add new frame</div>
+						</div>
+					
+						<!-- <div id="add-frame-action" class="add-frame-action" data-tile-action="newframe"><div class="add-frame-action-icon icon-frame-plus-white"></div>
+						<div class="label">Add new frame</div> -->
+					
 					</div>
-					<div class="col-md-2">2222222</div>
-					<div class="col-md-1">1111</div>
-				</div>
+
+					<canvas id="canvas" class="canvas">Обновите браузер</canvas>
+					<div class="main-animation"></div>
+					<div class="main-add"></div>
 			</main>
 		</div>
 	</body>
