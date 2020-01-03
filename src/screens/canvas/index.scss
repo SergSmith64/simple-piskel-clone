@@ -7,11 +7,31 @@ body {
   min-width: 320px;
   background-color: lightblue;
 }
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+
+
+.container {
+  width: 900px;
+  padding: 5px 20px;
+  margin: 0 auto;
+  background-color: lightgreen;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   padding-top: 8px;
   padding-bottom: 8px;
+  height: 48px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+  background-color: #9e7070;
 }
 .header-logo {
   font-family: serif;
@@ -25,28 +45,35 @@ header {
 }
 .header-tool {
   display: flex;
-  padding: 8px;
+  padding: 6px;
   background-color: #6d0922;
 }
 .header-tool button {
-  margin-left: 30px;
+  border-radius: 5px;
+  padding: 4px 10px;
 }
-.container {
-  width: 900px;
-  margin: 0 auto;
-  background-color: green;
+.header-tool button + button {
+  margin-left: 6px;
 }
 
+
+// ____________________________
+
 main {
-  height: 80vh;
+  display: flex;
+  // height: 70vh;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
-h1 {
-  font-size: 32px;
+main .row {
+  display: flex;
+  justify-content: center;
 }
 
-h2 {
-  font-size: 24px;
+#canvas {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+  margin: 0 10px;
+  width: 512px;
+  height: 512px;
+  image-rendering: pixelated;
 }
