@@ -5,25 +5,27 @@
 
 body {
 	min-width: 320px;
-	background-color: #AAA;
 	font-size: 16px;
 	font-weight: normal;
 	font-family: sans-serif;
 	color: #FFF;
 }
+
 h1 {
 	font-size: 28px;
+	line-height: 1.4;
 	font-family: sans-serif;
 	font-weight: normal;
 }
 
-
+.button:hover {
+	color: gold;
+}
 
 .container {
 	width: 1024px;
 	padding: 0 5px;
 	margin: 0 auto;
-	background-color: #777;
 }
 
 header {
@@ -36,18 +38,15 @@ header {
 	background-color: #2e2e2e;
 }
 .header-logo {
-	font-family: serif;
-	background-color: #790808;
+	padding-left: 4px;
 }
 .header-name {
 	font-size: 20px;
 	color: #FFF;
-	background-color: #360881;
 }
 .header-tool {
 	display: flex;
 	padding: 6px;
-	background-color: #6d0922;
 }
 .header-tool button {
 	background-color: gold;
@@ -63,9 +62,9 @@ header {
 
 main {
 	display: flex;
-	height: 90vh;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	justify-content: space-between;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .main-tools {
@@ -73,6 +72,73 @@ main {
 	width: 100px;
 	background-color: #1a2868;
 }
+
+
+
+
+
+
+
+
+
+
+.size-picker-option {
+  float: left;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  margin-right: 2px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #444;
+  cursor: pointer;
+}
+
+.size-picker-option[data-size='1'] {
+  padding: 10px;
+}
+.size-picker-option[data-size='2'] {
+  padding: 8px;
+}
+.size-picker-option[data-size='3'] {
+  padding: 6px;
+}
+
+.size-picker-option:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: block;
+  text-align: center;
+  line-height: 12px;
+  font-size: 90%;
+}
+
+.size-picker-option:hover {
+  border-color: #888;
+}
+
+.size-picker-option.selected:before {
+  background-color: gold;
+}
+
+.size-picker-option.selected {
+  border-color: gold;
+}
+
+.size-picker-option.labeled:before {
+  content: attr(real-size);
+  color: black;
+}
+
+
+
+
+
+
+
+
 
 .main-frames {
 	margin: 3px;
@@ -133,16 +199,34 @@ main {
 }
 
 
-#canvas {
+
+
+
+.canvas-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-grow: 1;
+	align-items: center;
+	margin-top: 3px;
+	background-color: #833030;
+}
+
+#canvasDraw {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
-	margin: 0 10px;
+	border: 3px solid #000;
 	width: 512px;
 	height: 512px;
-	image-rendering: pixelated;
+	background: url(images/canvas-32x32.png) repeat;
+}
+.canvas__change-color {
+	margin-top: 10px;
 }
 
 .main-animation {
+	margin: 3px;
 	width: 200px;
 	height: 200px;
 	background-color: #555;
 }
+

@@ -8,14 +8,14 @@
 		<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 		<!-- ____убрать_____ -->
 		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
-		<link href="index.css" rel="stylesheet">
+		<!-- <link href="index.css" rel="stylesheet"> -->
 	</head>
 	<body>
 		<div class="container">
 			<header>
-				<div class="header-logo">
-					<img src="" alt="">PISKEL<br> Logo
-				</div>
+				<a class="header-logo">
+					<img src="./images/piskel_logo_transparent.png" height="40" alt="piskel logo">
+				</a>
 				<div class="header-name">
 					<h1>Simple Piskel Clone</h1>
 				</div>
@@ -25,7 +25,13 @@
 				</div>
 			</header>
 			<main>
-					<div class="main-tools"></div>
+					<div class="main-tools">
+						<div class="pen-size-container size-picker-container">
+							<div class="pen-size-option size-picker-option selected" data-size="1"></div>
+							<div class="pen-size-option size-picker-option" data-size="2"></div>
+							<div class="pen-size-option size-picker-option" data-size="3"></div>
+						</div>
+					</div>
 
 					<div class="main-frames">
 
@@ -49,10 +55,20 @@
 					
 					</div>
 
-					<canvas id="canvas" class="canvas">Обновите браузер</canvas>
+					<div class="canvas-container">
+						<canvas id="canvasDraw" width="512" height="512" class="canvas">Обновите браузер</canvas>
+						<!-- _____ ДОБАВЛЯЮ ВЫБОР ЦВЕТА________myColor <-- ввожу цвет из INPUT в HTML____ -->
+						<div class="canvas__change-color">
+							<input type="color" id="colorPrim">
+						</div>
+					</div>
+					
+
 					<div class="main-animation"></div>
 					<div class="main-add"></div>
 			</main>
 		</div>
+		<!-- ____________________ УБРАТЬ __________________ -->
+		<!-- <script type="text/javascript" src="index.js"></script> -->
 	</body>
 </html>

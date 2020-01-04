@@ -10,4 +10,5 @@ Start time | End time | time spent | feature
 ---------- | -------- | ---------- | -------------------------------
 Dec 23 | Dec 29 | 25h | create Webpack assembly
 Dec 30 | Dec 31 | 4h | base structure of the project
-Jan 3 | Jan 3 | 5h | layout of the project
+Jan 3 | Jan 4 | 2h | layout of the project
+Jan 4 | Jan 4 | 3h | create main tools
