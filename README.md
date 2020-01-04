@@ -8,7 +8,7 @@ DEMO: https://sergsmith64.github.io/simple-piskel-clone/dist/index.html
 
 Start time | End time | time spent | feature
 ---------- | -------- | ---------- | -------------------------------
-Dec 23 | Dec 29 | 25h | create Webpack assembly
+Dec 23 | Jan 4 | 26h | create Webpack assembly
 Dec 30 | Dec 31 | 4h | base structure of the project
-Jan 3 | Jan 4 | 2h | layout of the project
+Jan 3 | Jan 4 | 4h | layout of the project
 Jan 4 | Jan 4 | 3h | create main tools
