@@ -92,21 +92,25 @@ main {
 }
 
 .main-tools__palette {
-	padding: 15px;
-	background-color: #6e600c;
+	padding: 2px;
+	// background-color: #6e600c;
 }
 
 .main-tools__palette ul {
-	padding: 5px;
-	background-color: #7624e2;
+	padding: 1px;
+	// background-color: #7624e2;
 	// list-style: square;
 	list-style: none;
 }
 
 .main-tools__palette ul li {
-	padding-top: 8px;
-	padding-bottom: 8px;
-	background-color: #ca1d1d;
+	margin-top: 4px;
+	padding: 7px 3px;
+	height: 28px;
+	background-color: #222;
+	border: #888 solid 3px;
+	border-radius: 4px;
+	font-size: 13px;
 }
 
 // ______________
@@ -114,8 +118,8 @@ main {
 .size-picker-option {
   float: left;
   box-sizing: border-box;
-  width: 30px;
-  height: 30px;
+  width: 22px;
+  height: 22px;
   margin-right: 2px;
   border-style: solid;
   border-width: 2px;
@@ -124,13 +128,16 @@ main {
 }
 
 .size-picker-option[data-size='1'] {
-  padding: 10px;
+  padding: 6px;
 }
 .size-picker-option[data-size='2'] {
-  padding: 8px;
+  padding: 5px;
 }
 .size-picker-option[data-size='3'] {
-  padding: 6px;
+  padding: 4px;
+}
+.size-picker-option[data-size='4'] {
+  padding: 3px;
 }
 
 .size-picker-option:before {
