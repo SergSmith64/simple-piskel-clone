@@ -4,9 +4,9 @@
   "description": "RSSchool Education Task 2019-2020",
   "main": "app.js",
   "scripts": {
-    "build": "npm run clear -s && webpack --progress",
-    "dev": "webpack-dev-server --history-api-fallback --inline --open",
-    "buildpro": "webpack -p"
+    "build": "webpack -p",
+    "buildpro": "npm run clear -s && webpack --progress",
+    "dev": "webpack-dev-server --history-api-fallback --inline --open"
   },
   "repository": {
     "type": "git",
