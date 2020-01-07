@@ -37,23 +37,3 @@ canvas.onmousedown =  function(event) {
     canvas.onmousemove = null;
   }
 };
-
-// ========================
-
-console.log("DOM-Events___");
-let step = 0;
-const infoLogger = (event) => {
-    step++;
-    // __убираю функционал по-умолчания -- переход по ссылке (по href)
-    // if (event.target.tagName === 'A') {
-    //     event.preventDefault();
-    // }
-    // _____________________
-    console.log(`step - ${step}`, event.currentTarget);
-    document.querySelectorAll('li').forEach(tr => li.style.background = '');
-    event.target.parentElement.style.background = 'red';
-}
-
-document.querySelector('ul').addEventListener('click', infoLogger);
-
-// ==========================
