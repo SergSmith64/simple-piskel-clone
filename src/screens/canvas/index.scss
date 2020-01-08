@@ -1,3 +1,5 @@
+@import "components/tools";
+
 * {
 	margin: 0;
 	padding: 0;
@@ -91,19 +93,37 @@ main {
 	margin-bottom: 10px;
 }
 
-.main-tools__palette {
+
+// ____ НИЖЕ МЕНЯЮ НАЗВАНИЯ КЛАССА_____3 раза__
+
+// .main-tools__palette {
+// 	padding: 2px;
+// }
+.tools {
 	padding: 2px;
-	// background-color: #6e600c;
 }
 
-.main-tools__palette ul {
+
+// .main-tools__palette ul {
+// 	padding: 1px;
+// 	list-style: none;
+// }
+.tools ul {
 	padding: 1px;
-	// background-color: #7624e2;
-	// list-style: square;
 	list-style: none;
 }
 
-.main-tools__palette ul li {
+
+// .main-tools__palette ul li {
+// 	margin-top: 4px;
+// 	padding: 7px 3px;
+// 	height: 28px;
+// 	background-color: #222;
+// 	border: #888 solid 3px;
+// 	border-radius: 4px;
+// 	font-size: 13px;
+// }
+.tools ul li {
 	margin-top: 4px;
 	padding: 7px 3px;
 	height: 28px;
@@ -112,6 +132,7 @@ main {
 	border-radius: 4px;
 	font-size: 13px;
 }
+
 
 // ______________
 
@@ -183,6 +204,7 @@ main {
 	height: 102px;
 	margin-bottom: 8px;
 	background: url(./images/canvas-32x32.png) repeat;
+	
 }
 .main-frames__new .selected {
 	border: 3px solid  gold;
@@ -237,7 +259,8 @@ main {
 	flex-grow: 1;
 	align-items: center;
 	margin-top: 3px;
-	background-color: #833030;
+	// background-color: #833030;
+	background-color: gray;
 }
 
 #canvasDraw {
@@ -246,8 +269,8 @@ main {
 	width: 512px;
 	height: 512px;
 	// padding: 30px;
-	background: url(./images/canvas-32x32.png) repeat;
-	// background-color: #1aa073;
+	// background: url(./images/canvas-32x32.png) repeat;
+	background: url(./images/setka-512x512.jpg);
 	// image-rendering: pixelated;
 }
 .canvas__change-color {
