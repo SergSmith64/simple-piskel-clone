@@ -12,5 +12,6 @@ Dec 23 | Jan 4 | 24h | create Webpack assembly
 Dec 30 | Dec 31 | 4h | base structure of the project
 Jan 3 | Jan 6 | 5h | layout of the project
 Jan 4 | Jan 4 | 2h | fix: Webpack assembly
-Jan 4 | Jan 6 | 8h | create main tools
-Jan 7 | Jan 7 | 1h | install jest
+Jan 4 | Jan 8 | 11h | create main tools
+Jan 7 | Jan 8 | 2h | install jest
+Jan 20 | Jan 20 | 1h | continue... jest
