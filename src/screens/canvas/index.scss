@@ -87,27 +87,26 @@ main {
 	flex-direction: column;
 	margin: 3px;
 	width: 100px;
-	background-color: #1a2868;
+	// background-color: #1a2868;
+	background-color: #999999;
 }
 .main-tools__pen {
 	margin-bottom: 10px;
 }
 
 
-// ____ НИЖЕ МЕНЯЮ НАЗВАНИЯ КЛАССА_____3 раза__
 
-// .main-tools__palette {
-// 	padding: 2px;
-// }
+
 .tools {
 	padding: 2px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	// ____ УБРАТЬ ____
+	// background-color: #c03030;
 }
 
 
-// .main-tools__palette ul {
-// 	padding: 1px;
-// 	list-style: none;
-// }
 .tools ul {
 	padding: 1px;
 	list-style: none;
@@ -197,12 +196,15 @@ main {
 	display: flex;
 	flex-direction: column;
 	width: 105px;
-	background-color: #054622;
+	background-color: #777;
 }
+
 .main-frames__new {
 	width: 102px;
 	height: 102px;
 	margin-bottom: 8px;
+	border: 1px solid #000;
+	border-radius: 4px;
 	background: url(./images/canvas-32x32.png) repeat;
 	
 }
@@ -260,7 +262,7 @@ main {
 	align-items: center;
 	margin-top: 3px;
 	// background-color: #833030;
-	background-color: gray;
+	background-color: #707070;
 }
 
 #canvasDraw {
@@ -269,13 +271,24 @@ main {
 	width: 512px;
 	height: 512px;
 	// padding: 30px;
-	// background: url(./images/canvas-32x32.png) repeat;
-	background: url(./images/setka-512x512.jpg);
+	// background: url(./images/setka-512x512.jpg);
+	background-color: #FFF;
 	// image-rendering: pixelated;
 }
-.canvas__change-color {
+
+// _________________________
+
+.tools__change-color {
 	margin-top: 10px;
+	text-align: center;
 }
+
+#colorPrim {
+	width: 40px;
+	height: 40px;
+}
+
+// __________________________
 
 .main-animation {
 	margin: 3px;

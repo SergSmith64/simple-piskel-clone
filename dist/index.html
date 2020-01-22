@@ -48,10 +48,16 @@
 								<li class="main-tools__item">Pen</li>
 								<li class="main-tools__item">Stroke</li>
 								<li class="main-tools__item">Paint bucket</li>
-								<li class="main-tools__item">Eraser</li>
+								<li class="main-tools__item">"E"raser</li>
 								<li class="main-tools__item">Color select</li>
 							</ul>
-						</div><!-- /main-tools__palette -->
+
+							<!-- _____ ДОБАВЛЯЮ ВЫБОР ЦВЕТА________myColor <-- ввожу цвет из INPUT в HTML____ -->
+							<div class="tools__change-color">
+								<input type="color" id="colorPrim">
+							</div>
+
+						</div>
 
 					</div>
 
@@ -81,10 +87,6 @@
 
 					<div class="canvas-container">
 						<canvas id="canvasDraw" width="512" height="512" class="canvas">Обновите браузер</canvas>
-						<!-- _____ ДОБАВЛЯЮ ВЫБОР ЦВЕТА________myColor <-- ввожу цвет из INPUT в HTML____ -->
-						<div class="canvas__change-color">
-							<input type="color" id="colorPrim">
-						</div>
 					</div>
 					
 

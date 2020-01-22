@@ -1,16 +1,19 @@
 function testSum (x, y) {
   return 999;
 }
-
 module.exports = {
   testSum
 };
+// ______________________________________________________
 
 
 // __ инициализация __
 var canvas =  document.getElementById('canvasDraw');
 var ctx = canvas.getContext('2d');
-
+// __ Размеры всего канваса __
+var canvasWidth = 512;
+var canvasHeight = 512;
+// console.log("__canvasWidth__", canvasWidth);
 // ____ делаю дефолтный цвет =ЧЕРНЫЙ=
 var newColor = 'black';
 console.log("дефолтный ЦВЕТ___", newColor);
@@ -21,7 +24,8 @@ console.log("дефолтный ЦВЕТ___", newColor);
 document.getElementById('colorPrim').oninput = function() {
   newColor =  this.value;
   ctx.fillStyle = newColor;
-  console.log("НОВЫЙ ЦВЕТ___", newColor);
+  // console.log("НОВЫЙ ЦВЕТ___", newColor);
+  console.log("ПРИСВОЕННЫЙ ЦВЕТ___", ctx.fillStyle);
 }
 
 
@@ -39,8 +43,15 @@ canvas.onmousedown =  function(event) {
   }
 };
 
-
-
+// ______ВСЕ СТИРАЮ_______
+function canvasClear() {
+  // __ПЕРЕКЛЮЧАЮСЬ НА БЕЛЫЙ И ЗАЛИВАЮ__
+  ctx.fillStyle = 'white';
+  ctx.fillRect(0, 0, canvasWidth, canvasHeight);
+  ctx.beginPath();
+  // __ПЕРЕКЛЮЧАЮСЬ НА ЧЕРНЫЙ__
+  ctx.fillStyle = 'black';
+}
 
 // ___  Рисую линию_________
 
@@ -53,3 +64,17 @@ canvas.onmousedown =  function(event) {
 // ctx.lineTo(400, 500);
 // ctx.lineTo(100, 200);
 // ctx.stroke();
+
+
+// ___СЛУШАЮ КЛАВИШИ___
+document.addEventListener('keydown', function(e) {
+  console.log("__нажал клавишу__ ", e.keyCode);
+
+  if (e.keyCode == 69) {
+    // __CLEAR__клавиша лат. "E"raser
+    console.log("_СТИРАЮ_КАНВАС_");
+    canvasClear();
+  }
+});
+
+
