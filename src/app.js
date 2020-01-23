@@ -6,8 +6,8 @@ import '../src/screens/canvas/index.scss';
 // import * from './screens/canvas/index';
 
 import { myTest } from './screens/canvas/index';
-var ttt = myTest();
-console.log('___myTest_____ttt___= ', ttt);
+const indexLoad = myTest();
+console.log('___index-Load___= ', indexLoad);
 
 // const summa = require('./screens/canvas/index.js');
 // console.log('_SUMMA______'+ summa);
@@ -16,3 +16,12 @@ console.log('___myTest_____ttt___= ', ttt);
 
 // let testSumConsole = testSum();
 // console.log("__ЭТО_ТЕСТОВАЯ_СУММА___" + testSumConsole);
+
+
+// _____________ TEST __________ APP.TEST.JS ___________
+// const { indexLoad } = require('../src/screens/canvas/index');
+
+// test('test index', () => {
+//   const mockFn = jest.fn();
+//   expect(mockFn).toBeDefined();
+// });
