@@ -50,16 +50,25 @@ canvas.onmousedown =  function(event) {
   }
 };
 
+// ____________________________________________________
+
 // ______ module _ВСЕ СТИРАЮ_______
-function canvasClear() {
+// function canvasClear() {
+
   // __ПЕРЕКЛЮЧАЮСЬ НА БЕЛЫЙ И ЗАЛИВАЮ__
-  ctx.fillStyle = 'white';
-  ctx.fillRect(0, 0, canvasWidth, canvasHeight);
-  ctx.beginPath();
+
+  // ctx.fillStyle = 'white';
+  // ctx.fillRect(0, 0, canvasWidth, canvasHeight);
+  // ctx.beginPath();
+
   // __ПЕРЕКЛЮЧАЮСЬ НА ЧЕРНЫЙ__
-  ctx.fillStyle = 'black';
-}
-// _________import { canvasClear } from './modclear';_________
+
+//   ctx.fillStyle = 'black';
+// }
+
+import { canvasClear } from './modclear';
+// ____________________________________________________
+
 // ___  Рисую линию_________
 
 //____ предварительно задаю цвет
