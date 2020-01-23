@@ -15,3 +15,5 @@ Jan 4 | Jan 4 | 2h | fix: Webpack assembly
 Jan 4 | Jan 8 | 11h | create main tools
 Jan 7 | Jan 8 | 2h | install jest
 Jan 20 | Jan 20 | 1h | continue... jest
+Jan 22 | Jan 22 | 2h | add fire keys
+Jan 23 | Jan 23 | 1h | fix: export modules

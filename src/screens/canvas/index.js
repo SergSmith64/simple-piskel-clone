@@ -1,9 +1,16 @@
-function testSum (x, y) {
+console.log("__ФАЙЛ__INDEX.JS__");
+
+// function testSum (x, y) {
+//   return 999;
+// }
+// module.exports = {
+//   testSum
+// };
+
+export function myTest() {
   return 999;
 }
-module.exports = {
-  testSum
-};
+
 // ______________________________________________________
 
 
@@ -43,7 +50,7 @@ canvas.onmousedown =  function(event) {
   }
 };
 
-// ______ВСЕ СТИРАЮ_______
+// ______ module _ВСЕ СТИРАЮ_______
 function canvasClear() {
   // __ПЕРЕКЛЮЧАЮСЬ НА БЕЛЫЙ И ЗАЛИВАЮ__
   ctx.fillStyle = 'white';
@@ -52,7 +59,7 @@ function canvasClear() {
   // __ПЕРЕКЛЮЧАЮСЬ НА ЧЕРНЫЙ__
   ctx.fillStyle = 'black';
 }
-
+// _________import { canvasClear } from './modclear';_________
 // ___  Рисую линию_________
 
 //____ предварительно задаю цвет
