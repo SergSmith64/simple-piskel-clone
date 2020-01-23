@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LearnWebCode</title>
+  <style>
+    .selected {
+      border: 1px solid red;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="our-headline">Click a list item to replace this text.</h1>
+  <button>Add new item</button>
+
+  <ul id="our-list">
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+    <li>Fourth item</li>
+    <li>Fifth item</li>
+  </ul>
+  <script>
+    // ___ИЗМЕНЯЮ СОДЕРЖИМОЕ тэга "our-headline"___присваиваю__Vivat!!!___
+    document.getElementById("our-headline").innerHTML = "Vivat!!!";
+    // НЕ РАБОТАЕТ :
+    // ourHeadline.innerHTML = "Test Once Again.";
+
+    var listItems =document.getElementById("our-list").getElementsByTagName("li");
+    // ___ИЗМЕНЯЮ СОДЕРЖИМОЕ 2-го элемента  класса "listItems"___присваиваю__Hello___
+    listItems[1].innerText = "Hello";
+
+    for (i=0; i < listItems.length; i++) {
+      listItems[i].innerHTML = "GoodBye!";
+    }
+
+    for ( i=0; i < listItems.length; i++) {
+      listItems[i].addEventListener("click", activateItem);
+    }
+
+    function activateItem2() {
+      console.log("CLICK detected !!!!!");
+    }
+
+    // _при нажатии на любой (так как цикл) строчке -- ИЗМЕНЯЕТСЯ заголовок H!
+    var ourHeadline = document.getElementById("our-headline");
+    function activateItem() {
+      ourHeadline.innerHTML = this.innerHTML;
+    }
+
+
+  </script>
+</body>
+</html>
